@@ -765,7 +765,7 @@ class TeraGuide{
                     break;
                 }					
                 case "PRMSG": {
-				  if(dispatch.settings.stream) return;	
+				 // if(dispatch.settings.stream) return;	
               command.message( dispatch.settings.cc + message );	             
                     break;
                 }					
