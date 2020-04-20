@@ -196,7 +196,7 @@ clearTimeout(timer2);
 		case 2105:
         case 1105: 
 		         {
-                    handlers['text']({"type": "text","sub_type": "message","delay": 600,"message":  'Waves soon...',"message_TW": "爆炸"}); 					
+                    handlers['text']({"type": "text","sub_type": "message","delay": 600,"message":  'blast',"message_TW": "爆炸"}); 					
 					SpawnCircle(false,553,135,500,8,270,0,3000,handlers,event,entity);						
 					SpawnCircle(false,553,315,500,8,270,0,3250,handlers,event,entity);
 					SpawnCircle(false,553,45,500,8,270,0,3500,handlers,event,entity);	
@@ -224,7 +224,7 @@ clearTimeout(timer2);
          case 2155:
 		         {
                   handlers['text']({"type": "text","sub_type": "message","message": "Knock down","message_TW": "火焰柱(击倒)"});
-                  handlers['text']({"type": "text","sub_type": "message","delay": 1200,"message":  'Waves soon...',"message_TW": "閃"}); 					  
+                  handlers['text']({"type": "text","sub_type": "message","delay": 1200,"message":  'dodge',"message_TW": "閃"}); 					  
                     break;
                  }			 
 				 
