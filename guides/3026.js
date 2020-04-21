@@ -288,6 +288,24 @@ function start_debuff(handlers, event, entity, dispatch) {
                   debuff = null
 				}
 		}
+			if (player.isMe(event.target.toString()) && [30261701,31261701].includes(event.id)) {
+			if (added) {
+				let shield_loc = entity['loc'].clone();
+				shield_loc.w = entity['loc'].w;
+				handlers['spawn']({ // spawn teleport mark
+					"sub_type": "item",
+					"id": 110684,
+					"sub_delay": 50000,
+					"pos": {
+						x: 53192,
+						y: 100761,
+						z: 14833
+					}
+				}, {
+					loc: shield_loc
+				});
+			}
+		}		
 	};
 	if (!debuff_tracker_started) {
 		dispatch.hook('S_ABNORMALITY_BEGIN', 4, abnormality_change.bind(null, true));
